@@ -52,6 +52,7 @@ int main() {
                 printf("4. Transfer\n");
                 printf("5. Top Up\n");
                 printf("6. Keluar\n");
+                printf("7. Log Out\n");
                 printf("Masukan Pilihan Anda: ");
                 scanf("%d", &choice);
                 
@@ -147,6 +148,10 @@ int main() {
                         printf("Logout Berhasil.\n");
                         login_attempt = 3;
                         break;
+                    case 7:
+                        //Keluar
+                        printf("Program Berakhir.\n");
+                        exit(0);
                     default:
                         printf("Opsi Tidak Valid.\n");
                         break;
